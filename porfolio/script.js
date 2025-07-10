@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Smooth scroll for navbar links
+
 const navLinks = document.querySelectorAll(".navbar a");
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -27,7 +28,8 @@ navLinks.forEach((link) => {
     const targetId = e.target.getAttribute("href").slice(1);
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
-      window.scrollTo({
+      
+      window.scrollTo({ 
         top: targetSection.offsetTop - 70,
         behavior: "smooth",
         
