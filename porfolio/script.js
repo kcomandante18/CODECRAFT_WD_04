@@ -30,6 +30,7 @@ navLinks.forEach((link) => {
       window.scrollTo({
         top: targetSection.offsetTop - 70,
         behavior: "smooth",
+        
       });
     }
   });
